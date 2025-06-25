@@ -1,11 +1,11 @@
-<?php
-// Установка базового пути
-define('ROOT', dirname(__FILE__));
 
-// Автозагрузка нужных файлов
+<?php 
+session_start();
+
+define('ROOT', dirname(__FILE__));
 require_once ROOT . '/app/requires/requires.php';
-var_dump(1);
-// Запуск маршрутизатора
+
+
 $router = new Route();
 $router->run();
 ?>
